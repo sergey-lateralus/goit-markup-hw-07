@@ -33,6 +33,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-icon {
@@ -43,15 +48,10 @@
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-message-field {
@@ -71,19 +71,19 @@
   border-radius: 4px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-message::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .field {
@@ -111,18 +111,18 @@
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.checkbox:checked + .icon {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url('../images/check.svg');
-  background-size: contain;
-  background-origin: border-box;
-}
+  .checkbox:checked + & {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url('../images/check.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
 
-.checkbox:focus + .icon {
-  border-color: var(--accent-color);
+  .checkbox:focus + & {
+    border-color: var(--accent-color);
+  }
 }
 
 .label {
@@ -153,9 +153,9 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background-color: var(--button-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
 }

@@ -4,10 +4,10 @@
 
 .work-item {
   position: relative;
-}
 
-.work-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-img {

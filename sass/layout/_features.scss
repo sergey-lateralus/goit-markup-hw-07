@@ -18,8 +18,10 @@
   line-height: 1.71;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+.features-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-thumb {

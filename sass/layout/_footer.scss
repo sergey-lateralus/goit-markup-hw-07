@@ -33,8 +33,10 @@
   color: var(--primary-white-color);
 }
 
-.footer-contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address {
@@ -49,6 +51,11 @@
   line-height: 1.71;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-link {
@@ -58,6 +65,11 @@
   line-height: 1.71;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-title {
@@ -70,8 +82,10 @@
   text-transform: uppercase;
 }
 
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
+.footer-social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-social-link {
@@ -84,11 +98,11 @@
 
   background-color: var(--footer-link-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-social-icon {
@@ -120,18 +134,18 @@
   color: var(--primary-white-color);
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 
-.subscribe-form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 
-  font-size: 16px;
-  line-height: 1.25;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .subscribe-btn {
@@ -154,11 +168,11 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--button-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
 }
 
 .subscribe-icon {
