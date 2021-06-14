@@ -508,19 +508,19 @@ ul {
   display: flex;
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
 
-.work-item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-img {
+.work__img {
   display: block;
 }
 
-.work-list-title {
+.work__list-title {
   position: absolute;
   left: 0;
   bottom: 0;
