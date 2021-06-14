@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.list-title {
+.features__list-title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -12,19 +12,19 @@
   text-transform: uppercase;
 }
 
-.list-description {
+.features__list-description {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.features-item {
+.features__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.features-thumb {
+.features__thumb {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
