@@ -68,7 +68,7 @@ ul {
   justify-content: space-between;
 }
 
-.social-link {
+.social-icons__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,17 +78,17 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover, .social-link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.social-icons__icon {
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-icons__link:hover .social-icons__icon,
+.social-icons__link:focus .social-icons__icon {
   fill: var(--primary-white-color);
 }
 
@@ -539,13 +539,13 @@ ul {
   display: flex;
 }
 
-.team-item {
+.team__item {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-white-color);
 }
 
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -555,11 +555,11 @@ ul {
   background-color: var(--section-background-color);
 }
 
-.team-card {
+.team__card {
   padding: 30px 32px;
 }
 
-.name-title {
+.team__name-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -568,11 +568,11 @@ ul {
   text-align: center;
 }
 
-.team-img {
+.team__img {
   display: block;
 }
 
-.job-description {
+.team__job-description {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;

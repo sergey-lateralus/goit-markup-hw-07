@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.social-link {
+.social-icons__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,12 +19,12 @@
   }
 }
 
-.social-icon {
+.social-icons__icon {
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .social-link:hover &,
-  .social-link:focus & {
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
     fill: var(--primary-white-color);
   }
 }
